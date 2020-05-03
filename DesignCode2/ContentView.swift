@@ -12,6 +12,8 @@ struct ContentView: View {
     @State private var show = false
     @State private var viewState = CGSize.zero
     @State private var showCard = false
+    @State private var bottomState = CGSize.zero
+    @State private var showFull = false
     
     var body: some View {
         ZStack {
@@ -80,12 +82,44 @@ struct ContentView: View {
                             self.show = false
                         }
                 )
-
             
             BottomCardView()
                 .offset(x: 0, y: showCard ? 360 : 1000)
+                .offset(y: bottomState.height)
                 .blur(radius: show ? 20 : 0)
                 .animation(.timingCurve(0.2, 0.8, 0.2, 1, duration: 0.8)) // cubic-bezier.com
+                .gesture(
+                    DragGesture()
+                        .onChanged { value in
+                            self.bottomState = value.translation
+                            // If user is draging card when it is showing in full mode
+                            // beside assign the translation to bottomState
+                            // we must add -300 value, so that it will keep in full mode
+                            if self.showFull {
+                                self.bottomState.height += -300
+                            }
+                        }
+                    .onEnded { value in
+                        // If user release when bottomState height is greater than 50
+                        // dismiss showing bottom card
+                        if self.bottomState.height > 50 {
+                            self.showCard = false
+                        }
+                        
+                        // If the bottomCard is not in full mode and user release when the height is less than -100 or
+                        // The bottom card is in full mode and user release when the height is less than -250
+                        // We will show the bottom card in full
+                        if (self.bottomState.height < -100 && !self.showFull) || (self.bottomState.height < -250 && self.showFull) {
+                            self.bottomState.height = -300
+                            self.showFull = true
+                            
+                        // Else we reset it to half mode
+                        } else {
+                            self.bottomState = .zero
+                            self.showFull = false
+                        }
+                    }
+                )
         }
     }
 }
