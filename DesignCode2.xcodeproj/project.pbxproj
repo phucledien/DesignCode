@@ -18,6 +18,7 @@
 		085F126324D0254300DA60F3 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 085F126224D0254300DA60F3 /* HomeView.swift */; };
 		085F126B24D2BC9800DA60F3 /* SwiftUIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 085F126A24D2BC9800DA60F3 /* SwiftUIView.swift */; };
 		085F126D24D338B200DA60F3 /* UpdateList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 085F126C24D338B200DA60F3 /* UpdateList.swift */; };
+		085F126F24D33F2E00DA60F3 /* UpdateDetail.swift in Sources */ = {isa = PBXBuildFile; fileRef = 085F126E24D33F2E00DA60F3 /* UpdateDetail.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -34,6 +35,7 @@
 		085F126224D0254300DA60F3 /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
 		085F126A24D2BC9800DA60F3 /* SwiftUIView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftUIView.swift; sourceTree = "<group>"; };
 		085F126C24D338B200DA60F3 /* UpdateList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UpdateList.swift; sourceTree = "<group>"; };
+		085F126E24D33F2E00DA60F3 /* UpdateDetail.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UpdateDetail.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -73,6 +75,7 @@
 				085F126A24D2BC9800DA60F3 /* SwiftUIView.swift */,
 				085F126224D0254300DA60F3 /* HomeView.swift */,
 				085F126C24D338B200DA60F3 /* UpdateList.swift */,
+				085F126E24D33F2E00DA60F3 /* UpdateDetail.swift */,
 				0851B30424782E510047CB83 /* MenuView.swift */,
 				0839880F245F13AD008F2656 /* Assets.xcassets */,
 				08398814245F13AD008F2656 /* LaunchScreen.storyboard */,
@@ -163,6 +166,7 @@
 			files = (
 				0839880A245F13AA008F2656 /* AppDelegate.swift in Sources */,
 				085F126B24D2BC9800DA60F3 /* SwiftUIView.swift in Sources */,
+				085F126F24D33F2E00DA60F3 /* UpdateDetail.swift in Sources */,
 				085F126D24D338B200DA60F3 /* UpdateList.swift in Sources */,
 				0851B30524782E510047CB83 /* MenuView.swift in Sources */,
 				0851B307247914CC0047CB83 /* Home.swift in Sources */,
