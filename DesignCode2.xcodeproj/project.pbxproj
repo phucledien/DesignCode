@@ -16,6 +16,7 @@
 		0851B30524782E510047CB83 /* MenuView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0851B30424782E510047CB83 /* MenuView.swift */; };
 		0851B307247914CC0047CB83 /* Home.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0851B306247914CC0047CB83 /* Home.swift */; };
 		085F126324D0254300DA60F3 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 085F126224D0254300DA60F3 /* HomeView.swift */; };
+		085F126B24D2BC9800DA60F3 /* SwiftUIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 085F126A24D2BC9800DA60F3 /* SwiftUIView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -30,6 +31,7 @@
 		0851B30424782E510047CB83 /* MenuView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuView.swift; sourceTree = "<group>"; };
 		0851B306247914CC0047CB83 /* Home.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Home.swift; sourceTree = "<group>"; };
 		085F126224D0254300DA60F3 /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
+		085F126A24D2BC9800DA60F3 /* SwiftUIView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftUIView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -66,6 +68,7 @@
 				0839880B245F13AA008F2656 /* SceneDelegate.swift */,
 				0839880D245F13AA008F2656 /* ContentView.swift */,
 				0851B306247914CC0047CB83 /* Home.swift */,
+				085F126A24D2BC9800DA60F3 /* SwiftUIView.swift */,
 				085F126224D0254300DA60F3 /* HomeView.swift */,
 				0851B30424782E510047CB83 /* MenuView.swift */,
 				0839880F245F13AD008F2656 /* Assets.xcassets */,
@@ -156,6 +159,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				0839880A245F13AA008F2656 /* AppDelegate.swift in Sources */,
+				085F126B24D2BC9800DA60F3 /* SwiftUIView.swift in Sources */,
 				0851B30524782E510047CB83 /* MenuView.swift in Sources */,
 				0851B307247914CC0047CB83 /* Home.swift in Sources */,
 				085F126324D0254300DA60F3 /* HomeView.swift in Sources */,
